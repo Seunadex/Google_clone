@@ -1,0 +1,268 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ /*HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+    }
+
+/************************************************
+MY MAIN CSS FILE
+*************************************************/
+
+body {
+  min-width: 1000px;
+}
+
+/************************************************
+HEADER NAVIGATIONS
+*************************************************/
+
+header {
+  margin: 0 90px 185px 0;
+  padding: 5px 0;
+  width: 100%;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+li a {
+  color: #404040;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9.5pt;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 4px;
+  vertical-align: middle;
+}
+
+.p:hover {
+  text-decoration: none;
+}
+
+nav li:hover,
+p > a:hover,
+nav > a:hover {
+  text-decoration: underline;
+  }
+
+#sign_in {
+  margin: 0 50px 0 5px;
+  background: #008c00;
+  padding: 8px 12px;
+  border-radius: 50%;
+  color: white;
+  width: 19px;
+  height: 25px;
+
+}
+
+
+ul li a img {
+  color: #666;
+  cursor: default;
+  opacity: 0.6;
+  margin-top: 4px;
+}
+
+ul li a img:hover {
+  opacity: 1;
+}
+
+ul li p {
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+
+ul {
+  float: right;
+  margin-top: 15px;
+}
+
+#wrapper {
+  text-align: center;
+}
+
+#full_width {
+  width: 100%;
+  display: block;
+  padding: 5px 0;
+  margin: 5px 0 115px 0;
+}
+.google_img {
+  position: absolute;
+  left: 450px;
+  width: 285px;
+  height: 130px;
+  background-image: url("../img/rsz_new-google-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#nigeria {
+  position: absolute;
+  bottom: 23px;
+  right: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#777;font-size:16px;font-weight:bold;
+}
+
+#textbox {
+  width: 570px;
+  height: 30px;
+  border: 1px solid;
+  padding: 0 0 0 10px;
+  border-color: #dcdcdc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  background-color: transparent;font-family: Arial, Helvetica, sans-serif;
+  font-size: 13pt;
+  box-shadow: 1px 1px 2px #888888;
+}
+
+#textbox:hover {  
+    border-color: #A4A4A4;
+}
+
+#textbox:focus {
+  outline: none;
+  border-color: #4285f4;
+}
+
+#textbox_real:focus {
+  border: 0.2px;
+  outline: none;
+}
+
+#mic {
+  position: absolute;
+  opacity: 0.6;
+  padding: 5px 0 0 0;
+  height: 20px;
+  left: 770px;
+}
+
+.submit {
+  margin: 0 6px 45px 6px;
+  height: 30px;
+  border: 1px solid;
+  border-color: #dcdcdc;
+  background-color: #FAFAFA;
+  color: #404040;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9.5pt;
+}
+
+.submit:hover {
+  border-color: #BDBDBD;
+}
+
+#g_languages {
+  color: #404040;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9.5pt;
+  margin-bottom: 30px;
+}
+
+#g_languages p a {
+  margin: 0 10px 0 0;
+  color: blue;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+}
+
+#footer {
+  min-width: 1000px;
+  height: 45px;
+  background-color: #F2F2F2;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: space-between;
+}
+
+#business a {
+  margin-left: 30px;
+  color: #6E6E6E;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9.5pt;
+}
+
+#settings,
+#business {
+  -webkit-align-self: center;
+}
+
+#settings a {
+  color: #6E6E6E;
+  margin-top: 15px;
+  margin-right: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9.5pt;
+}
+
+/************************************************
+MEDIA QUARIES
+*************************************************/
+@media screen and (min-width: 1000px) {
+  .google_img {
+    left: 41%;
+  }
+
+  #mic {
+    left: calc(270px + 50%);
+  }
+}
+
+@media screen and (min-height: 545px) {
+  footer {
+    bottom: 0;
+  }
+}
